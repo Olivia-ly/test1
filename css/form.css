@@ -1,0 +1,75 @@
+form{
+    width: 80vw;
+    background-color: lightgrey;
+    margin: 0 auto;
+	min-width: 400px;
+	max-width: 800px; /* utiliser*/
+    
+}
+
+form > fieldset{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+	background-color: lightgrey;
+	border: none;
+}
+
+
+fieldset{
+    background-color: white;
+}
+
+.colonne {
+	padding: 2%;
+    flex: 1 0 40%;
+}
+
+.colonne:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding-right: 5%;
+}
+
+.colonne:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+
+.colonne fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 80%;
+	padding: 2%;
+}
+
+label>input[type="radio"] {
+    display: none;
+} 
+
+
+label>span {
+    display:inline-block;
+    width: 14px;
+    height: 15px;
+    background-image: url("../images/checkbox-icon-26.jpg");
+    background-size: 42px 30px;
+    background-position: -14px 15px;
+    vertical-align: top;
+} 
+label >input:checked ~ span{
+    background-position: -14px 0px;
+}
+
+/* label>input:checked ~ span {
+    background-position: -14px 0px;
+} *3
